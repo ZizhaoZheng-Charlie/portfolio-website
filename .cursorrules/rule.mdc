@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+- Whenever you create a new component file, always place it in the "components" folder.
+- Any type interfaces used in components should be defined in a separate "type.ts" file inside the type folder, not directly in the component file itself.

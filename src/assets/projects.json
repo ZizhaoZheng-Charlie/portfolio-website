@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "title": "Magic the Gathering Deck Builder",
+      "description": "A web application that allows users to build and share their own Magic the Gathering decks. Built with React, TypeScript, and Tailwind CSS."
+    },
+    {
+      "title": "Used Car Dealership Web Application",
+      "description": "A modern, full-stack car dealership management system built with React, Express, TypeScript, and SQLite. Features vehicle listings with advanced filtering, customer testimonials, staff directory, finance applications, and contact management with a responsive UI."
+    },
+    {
+      "title": "Terminal-Style UI Showcase",
+      "description": "A comprehensive collection of terminal-inspired UI components built with Next.js 15, TypeScript, and Tailwind CSS. Features a dark, monospace aesthetic inspired by Unit 410, including navigation components, expandable sections, hex displays, terminal modals, form components, data tables, and interactive elements with a distinctive command-line interface design."
+    },
+    {
+      "title": "DodoBot Official",
+      "description": "A feature-rich Discord music bot built with Python, Discord.py, Spotify API, and Pytube. Enables music playback from YouTube and Spotify, voice channel integration, playlist management with queue, shuffle, skip, and pause controls. Includes voice command support for hands-free operation and supports both text and voice-based interactions."
+    },
+    {
+      "title": "Playing Card Deck Storage System",
+      "description": "A comprehensive desktop application built with Python, Tkinter, and SQLAlchemy for managing card collections. Features series management, inventory and wishlist tracking with detailed item properties (signature, gilded, sealed status), filtering and sorting capabilities, image preview support, and a modern tabbed interface. Includes executable build support for easy distribution."
+    }
+  ]
+}

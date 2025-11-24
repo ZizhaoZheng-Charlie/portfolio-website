@@ -1,0 +1,38 @@
+{
+  "experiences": [
+    {
+      "jobTitle": "Full-Stack Software Engineer",
+      "company": "Alias Intelligence (On-Site)",
+      "duration": "June 2025 – Nov 2025",
+      "summary": "Delivered full-stack features using TypeScript (backend) and React + shadcn/ui (frontend), improving UI consistency and data reliability.",
+      "achievements": [
+        "Built and maintained backend services integrating AWS DynamoDB, CloudWatch, SES, ensuring stability and accurate data flow.",
+        "Refactored legacy code and optimized shared components, improving performance through clearer logic and caching.",
+        "Implemented UX enhancements: filtering, sorting, navigation fixes, and policy/email logic updates.",
+        "Resolved workflow requests, data corrections, and content updates across teams.",
+        "Improved cross-team collaboration by increasing visibility into tasks and communication pipelines."
+      ]
+    },
+    {
+      "jobTitle": "Junior Software Engineer",
+      "company": "CoinHeatMap (Remote)",
+      "duration": "Nov 2024 – Apr 2025",
+      "summary": "Designed and developed the platform using React, Node.js, and MongoDB, focused on real-time crypto heatmaps and social volume analytics.",
+      "achievements": [
+        "Integrated REST + WebSocket APIs for live market insights and creator trend tracking.",
+        "Built advanced visualizations using D3.js and Chart.js for dynamic, interactive market data.",
+        "Improved performance and scalability using Docker, AWS (S3, EC2), and Cloudflare for high-volume crypto data pipelines."
+      ]
+    },
+    {
+      "jobTitle": "Junior Software Engineer",
+      "company": "LY MarTech (Internship) (Remote)",
+      "duration": "May 2024 – Aug 2024",
+      "summary": "Developed healthcare management dashboards (patients, labs, pharmacy, equipment) using Flask, Docker, Kubernetes.",
+      "achievements": [
+        "Implemented secure authentication: login/registration, persistent cookies, HTTPS via Nginx, and multi-level user roles.",
+        "Added features including patient feedback, AI diagnostics, medication reminders, telemedicine tools, and a healthcare chatbot."
+      ]
+    }
+  ]
+}
