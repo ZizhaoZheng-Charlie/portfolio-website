@@ -12,9 +12,12 @@ export const ElectricTrail = ({
   const [trailPoints, setTrailPoints] = useState<TrailPoint[]>([]);
   const animationFrameRef = useRef<number | undefined>(undefined);
   const svgRef = useRef<SVGSVGElement>(null);
-  const filterIdRef = useRef(
-    `electric-trail-filter-${Math.random().toString(36).substr(2, 9)}`
-  );
+  const filterIdRef = useRef<string | null>(null);
+  
+  // Initialize filterId lazily to avoid Math.random() during render
+  if (filterIdRef.current === null) {
+    filterIdRef.current = `electric-trail-filter-${Math.random().toString(36).substr(2, 9)}`;
+  }
 
   useEffect(() => {
     if (!enabled) {
@@ -81,8 +84,10 @@ export const ElectricTrail = ({
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       clearInterval(cleanupInterval);
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
+      // Capture the current value to avoid stale closure issues
+      const currentAnimationFrame = animationFrameRef.current;
+      if (currentAnimationFrame !== undefined) {
+        cancelAnimationFrame(currentAnimationFrame);
       }
     };
   }, [enabled, trailLength, minDistance, maxDistance]);

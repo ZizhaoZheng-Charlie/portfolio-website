@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useMemo } from "react";
 import { ElectricTrail } from "./ElectricTrail";
 import type { TimelineProps } from "../types/portfolio";
 
@@ -10,6 +10,17 @@ export const Timeline: React.FC<TimelineProps> = ({
   const [canScrollUp, setCanScrollUp] = useState(false);
   const [canScrollDown, setCanScrollDown] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+
+  // Generate star positions once to avoid Math.random() during render
+  const stars = useMemo(() => {
+    return Array.from({ length: 50 }).map(() => ({
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      width: Math.random() * 2 + 1,
+      height: Math.random() * 2 + 1,
+      animationDuration: Math.random() * 3 + 2,
+    }));
+  }, []);
 
   const checkScrollability = () => {
     if (scrollContainerRef.current) {
@@ -69,16 +80,16 @@ export const Timeline: React.FC<TimelineProps> = ({
       {/* Stars background effect */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 opacity-30">
-          {Array.from({ length: 50 }).map((_, i) => (
+          {stars.map((star, i) => (
             <div
               key={i}
               className="absolute rounded-full bg-white"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                width: `${Math.random() * 2 + 1}px`,
-                height: `${Math.random() * 2 + 1}px`,
-                animation: `twinkle ${Math.random() * 3 + 2}s infinite`,
+                left: `${star.left}%`,
+                top: `${star.top}%`,
+                width: `${star.width}px`,
+                height: `${star.height}px`,
+                animation: `twinkle ${star.animationDuration}s infinite`,
               }}
             />
           ))}

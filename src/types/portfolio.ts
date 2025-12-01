@@ -15,6 +15,8 @@ export interface HeroProps {
 export interface ProjectItem {
   title: string;
   description: string;
+  githubUrl?: string;
+  websiteUrl?: string;
 }
 
 export interface ProjectProps {
