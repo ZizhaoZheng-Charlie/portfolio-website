@@ -22,9 +22,10 @@
       "githubUrl": "https://github.com/ZizhaoZheng-Charlie/githubsummary"
     },
     {
-      "title": "Playing Card Deck Storage System",
-      "description": "A comprehensive desktop application built with Python, Tkinter, and SQLAlchemy for managing card collections. Features series management, inventory and wishlist tracking with detailed item properties (signature, gilded, sealed status), filtering and sorting capabilities, image preview support, and a modern tabbed interface. Includes executable build support for easy distribution.",
-      "githubUrl": "https://github.com/ZizhaoZheng-Charlie/Playing-Card-Deck-Storage-System"
+      "title": "Mina Companion",
+      "description": "A fine-tuned Mistral-7B-v0.3 AI model designed for emotionally intelligent companionship, offering empathetic and context-aware conversations. Built using PEFT (Parameter-Efficient Fine-Tuning) with LoRA adapters, trained with TRL (Transformer Reinforcement Learning) and Unsloth framework. The model provides emotionally intelligent responses and context-aware dialogue, making it suitable for companionship and conversational AI applications.",
+      "githubUrl": "https://github.com/ZizhaoZheng-Charlie/Mina-companion",
+      "websiteUrl": "https://huggingface.co/ZZZHENGG/mina-companion"
     },
     {
       "title": "Charlie Code Reviewer",
@@ -51,6 +52,11 @@
       "description": "A modern, beautiful recipe website built with Next.js 14, TypeScript, and Tailwind CSS that promotes the concept of 'Peace through food' - sharing food brings calm to conflict. Features a homepage with video background, advanced recipe browser with category and meat type filtering, search functionality, interactive recipe carousel with detailed views, recipe modal with full ingredients and instructions, multiple pages (About, Contact, Pricing, Recipes), email subscription component, and a fully responsive design with smooth animations and transitions.",
       "githubUrl": "https://github.com/ZizhaoZheng-Charlie/Food-recipe-Website",
       "websiteUrl": "https://food-recipe-website-peach.vercel.app"
+    },
+    {
+      "title": "Playing Card Deck Storage System",
+      "description": "A comprehensive desktop application built with Python, Tkinter, and SQLAlchemy for managing card collections. Features series management, inventory and wishlist tracking with detailed item properties (signature, gilded, sealed status), filtering and sorting capabilities, image preview support, and a modern tabbed interface. Includes executable build support for easy distribution.",
+      "githubUrl": "https://github.com/ZizhaoZheng-Charlie/Playing-Card-Deck-Storage-System"
     }
   ]
 }
